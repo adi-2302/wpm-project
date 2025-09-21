@@ -1,5 +1,6 @@
 
 const mongoose = require('mongoose');
+require('./locations')
 const dbURI = 'mongodb://localhost/Loc8r';
 mongoose.connect(dbURI, {useNewUrlParser: true});
 mongoose.connection.on('connected', () => {
